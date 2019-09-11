@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>ASP.NET Core 导入导出Excel.xlsx 文件</h2>
+<fieldset>        
+    <figure>封装前</figure>        
+    <a asp-action="Export">导出Excel</a>        
+    <hr />        
+    <form enctype="multipart/form-data" method="post" asp-action="Import">            
+    <input type="file" name="excelfile" />           
+    <input type="submit" value="导入" />       
+        </form>   
+ </fieldset>
+<fieldset>      
+    <figure>封装后</figure>       
+    <a asp-action="Export2">导出Excel</a>      
+    <hr />        
+    <form enctype="multipart/form-data" method="post" asp-action="Import2">           
+    <input type="file" name="excelfile" />          
+    <input type="submit" value="导入" />       
+        </form>   
+ </fieldset>
+
+
